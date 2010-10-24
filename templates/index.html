@@ -1,0 +1,13 @@
+<html>
+<head>
+    <title>{% block title %}{% endblock %}</title>
+    <script src="http://code.jquery.com/jquery-1.4.3.js"></script>
+    <script src="{{MEDIA_URL}}js/core.js"></script>
+</head>
+<body>
+    <h1>Muril</h1>
+    {% block content %}{% endblock %}
+    {% block footer %}
+    {% endblock %}
+</body>
+</html>

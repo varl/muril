@@ -1,0 +1,11 @@
+{% extends "index.html" %}
+
+{% block content %}
+	<p>{{ link.desc }}</p>
+	{% for link in link_dict %}
+		<a class="foo" href="{{link}}">{{ link }}</a><br/>
+	{% endfor %}
+	<p>
+		<a id="flak-shot" href="#">You wanna see them right? BAM!</a>
+	</p>
+{% endblock %}
